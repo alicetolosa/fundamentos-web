@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- Informa ao navegador que o arquivo é HTML5-->
+
+<html lang="pt-br"> <!-- Idioma da página é português do Brasil-->
+
+<head> <!-- Informações sobre a página, mas que não aparecem diretamente na tela. -->
+   
+    <meta charset="UTF-8">  <!-- Permite usar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Faz o site se adaptar a celular, tablet e computador -->
+    <title>Fundamentos Web</title> <!-- o nome da aba do navegador-->
+
+</head>
+<body> <!-- onde fica todo o conteúdo visível da página, tudo que o usuario vê-->
+
+     <!-- ================== TÍTULOS ================== -->
+     <!-- h1 até h6: representam títulos (do mais importante ao menos importante) -->
+     <h1>Hello Word</h1> 
+     <h2>Meu site</h2>
+
+
+    <!-- ================== TEXTO ================== -->
+     <!-- Parágrafo -->
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+
+     <!-- Texto com importância (negrito semântico) -->
+     <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong> 
+
+     <!-- Quebra de linha -->
+     <br>
+
+     <!-- Ênfase no texto (itálico) -->
+     <em>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</em>
+
+
+    <!-- ================== LISTAS ================== -->
+     <!-- ul : Lista NÃO ordenada (com marcadores) -->
+     <ul>
+        <li>Café</li>
+        <li>Feijão</li>
+     </ul>
+
+     <!-- ol : Lista ORDENADA (numerada) -->
+     <ol>
+        <li>Café</li>
+        <li>Feijão</li>
+     </ol>
+    
+     <!-- Item da lista, o <li> só deve ser usado dentro de <ul> ou <ol> -->
+     <li></li>
+
+
+    <!-- ================== LINKS ================== -->
+
+     <!-- Link externo (IMPORTANTE: usar https://) -->
+    <a href="www.google.com">Acesso ao Google</a>
+    <br><br>
+    
+    <!-- Link interno (outra página do projeto/caminho da pasta (ctrl+espaço)) -->
+    <a href="contato.html">Acesso aos Contatos</a>
+    <br><br>
+
+    <!-- atrubutos da tag link: -->
+     <!-- target="_blank : Abra esse link em uma nova aba -->
+     <a href="www.google.com" target="_blank">Acesso ao  Google</a>
+    <br><br>
+
+    <!-- ================== IMAGENS ================== -->
+
+     <!-- Imagem local: links caminho da pasta (ctrl+espaço) -->
+     <img src="assets/img/imagem5.jpg" alt="imagem dorama" width="400">
+
+     <!-- magem externa -->
+     <img src="https://via.placeholder.com/150" alt="Imagem exemplo">
+
+     <!-- atributos da tag img 
+     - width="" : define o tamanho da imagem na tela, pode tbém ser ajutado no css
+     - alt= "" : Texto alternativo da imagem, acessibilidade ou caso a imagem quebre.
+
+     -->
+    <br><br>
+
+    <!-- ================== TABELAS ================== -->
+    <table> <!--tag que inicia a tabela-->
+        <tr> <!-- Cria uma linha da tabela -->
+            <th>Produto</th> <!--Colunas da tabela-->
+            <th>Preço</th>
+            <th>Estoque</th>
+        </tr>
+        <tr> <!--Linha 2 -->
+            <td>Notebook</td> <!-- Dados/Valores da tabela-->
+            <td>R$ 3500</td>
+            <td>10</td>
+        </tr>
+        
+        <tr>
+            <td>Mouse</td>
+            <td>R$ 80</td>
+            <td>50</td>
+        </tr>
+
+    </table>
+   <br><br>
+
+    <!-- ================== FORMULÁRIO ================== -->
+    <h2>Formulário</h2>
+    <form action="">
+        
+        <!-- Campo Nome -->
+        <label for="nome">Nome</label> <!-- LABEL : texto que descreve o campo, FOR:conecta o label ao input-->
+        <input id="nome" type="text"> <!-- input : Cria um campo de texto, type="text" → permite digitar texto, id="nome" → identifica o campo e conecta com o label-->
+        <br>
+
+        <!-- Campo Email -->
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br>
+
+        <!-- Campo Senha -->
+        <label for="senha">Senha</label>
+        <input id="senha" type="password">
+        <br>
+
+        <button type="submit">Enviar</button> <!-- button: Cria um botão clicável, type="submit" :esse botão vai enviar um formulário-->
+
+    </form>
+    <br>
+
+    <!-- ================== SEMÂNTICA ================== -->
+
+     <!-- Link para outra página -->
+     <a href="semantico.html">Ver estrutura semântica</a>
+    <br><br>
+
+    <!-- Div: usada para agrupar elementos -->
+    <div></div>
+
+
+
+</body>
+</html>
